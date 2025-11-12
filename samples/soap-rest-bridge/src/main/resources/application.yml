@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    banner-mode: "off"
+
+bridge:
+  rest-base-url: "https://httpbin.org"
+  default-target-path: "/post"
+  connect-timeout: 2000
+  read-timeout: 5000

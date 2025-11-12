@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com/soaprestbridge/schema"
+           xmlns:tns="http://example.com/soaprestbridge/schema"
+           elementFormDefault="qualified">
+
+    <xs:element name="BridgeRequest" type="tns:BridgeRequest"/>
+    <xs:element name="BridgeResponse" type="tns:BridgeResponse"/>
+
+    <xs:complexType name="BridgeRequest">
+        <xs:sequence>
+            <xs:element name="correlationId" type="xs:string"/>
+            <xs:element name="targetPath" type="xs:string" minOccurs="0"/>
+            <xs:element name="payload" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BridgeResponse">
+        <xs:sequence>
+            <xs:element name="correlationId" type="xs:string"/>
+            <xs:element name="status" type="xs:string"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

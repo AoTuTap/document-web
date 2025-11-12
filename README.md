@@ -30,3 +30,7 @@ Use the default credentials:
 - **Password:** `password`
 
 Add your documents to the `documents/` directory. They will automatically be included in search results.
+
+## Samples
+
+The `samples/soap-rest-bridge` directory contains một project Spring Boot minh họa cách lắng nghe SOAP và chuyển tiếp payload sang REST API.
